@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en_US">
+<head>
+<title>Hotel and Services</title>	
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</head>
+
+	<div id="header"></div>
+
+  <div id="wrapper">
+  <div class="slider-wrapper theme-default">
+  <div id="slider" class="nivoSlider"> <img src="images/slider/001.jpg" data-thumb="images/slider/001.jpg" alt="" title="Family Holiday" /> <img src="images/slider/002.jpg" data-thumb="images/slider/002.jpg" alt="" title="Family Holiday" /><img src="images/slider/003.jpg" data-thumb="images/slider/003.jpg" alt="" data-transition="slideInLeft" title="Family Holiday" /> <img src="images/slider/004.jpg" data-thumb="images/slider/004.jpg" alt="" title="Family Holiday" /> </div>
+  </div>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script> 
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	effect:'fold',
+        	animSpeed    : 900,
+         	
+	         beforeChange : function(){
+
+	            $('.nivo-caption').removeClass('animated bounceInLeft').hide();
+
+	            
+	         },
+	         afterChange : function(){
+
+	            $('.nivo-caption').addClass('animated bounceInLeft').show();
+	            
+	         },
+
+	         slideshowEnd: function(){
+	         	$('.nivo-caption').removeClass('animated bounceInLeft').hide();
+	         },
+
+	         lastSlide: function(){
+	         	$('.nivo-caption').removeClass('animated bounceInLeft').hide();
+	         },
+
+	         afterLoad: function(){
+
+	         	$('.nivo-caption').addClass('animated bounceInLeft').show();
+	         }
+        });
+    });
+    </script> 
+
+
+   <section>
+   	<div class="container">
+   		<div class="row">
+   			<div class="section-block">
+   			<div class="service-content">
+   			<h1 class="page-title" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Rooms & Choice</h1>
+   			<div class="col-sm-3">
+   				<div class="room-box" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+   				<div class="featured-image hovereffect">
+   					<img src="images/featured5.jpg" class="img-responsive">
+   					<div class="overlay">
+           				<a class="info" href="#">View Rooms</a>
+        			</div>
+   				</div>
+   				<div class="featured-text">
+   					<h4>Single Room</h4>
+   					<p>price sample</p>
+   				</div>
+   				</div>
+   			</div>
+   			<div class="col-sm-3">
+   				<div class="room-box" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+   					<div class="featured-image hovereffect">
+   						<img src="images/featured5.jpg" class="img-responsive">
+   						<div class="overlay">
+           				<a class="info" href="#">View Rooms</a>
+        			</div>
+   					</div>
+   					<div class="featured-text">
+	   					<h4>Double Room</h4>
+	   					<p>price sample</p>
+   				    </div>
+   				</div>
+   			</div>
+   			<div class="col-sm-3">
+   				<div class="room-box" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+   					<div class="featured-image hovereffect">
+   						<img src="images/featured5.jpg" class="img-responsive">
+   						<div class="overlay">
+           				<a class="info" href="#">View Rooms</a>
+        			</div>
+   					</div>
+   					<div class="featured-text">
+   						<h4>Twin Room</h4>
+   						<p>price sample</p>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="col-sm-3">
+   				<div class="room-box" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+   					<div class="featured-image hovereffect">
+   						<img src="images/featured5.jpg" class="img-responsive">
+   						<div class="overlay">
+           				<a class="info" href="#">View Rooms</a>
+        			</div>
+   					</div>
+   					<div class="featured-text">
+   						<h4>Deluxe Room</h4>
+   						<p>price sample</p>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   		</div>
+   		</div>
+   	</div>
+   </section>
+
+   <section>
+	<div class="container">
+		<div class="row">
+			<div class="section-block">
+			<div class="welcome-content">
+			<h1 class="page-title" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Welcome</h1>
+			<p data-scroll="toggle(.fromRightIn, .fromRightOut)">
+				Since 1990, adventures for over 26 years of memories! We have enjoyed sharing our enthusiasm and love for animals and island life with you all! Nunc dapibus vitae justo non dignissim. Aliquam dictum nec lacus nec efficitur. Phasellus euismod orci quis dolor semper, nec aliquet nisl dapibus. Donec viverra luctus sagittis. Nulla a neque nec erat porta mollis et non nisi. Donec eget tempus purus. In scelerisque risus id quam rutrum, eu dictum sem lobortis.
+			</p>
+			</div>
+			</div>
+		</div>
+	</div>
+   </section>
+
+	<section class="bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="section-block">
+				<div class="service-content">
+				<h1 class="page-title">Services We Offer</h1>
+				<div class="col-sm-4">
+					<div class="service-box" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+					<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+					<h3>Booking</h3>
+					<p>
+						Since 1990, adventures for over 26 years of memories! We have enjoyed sharing our enthusiasm and love for animals and island life with you all!
+					</p>
+				</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="service-box" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+					<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+					<h3>Reservation</h3>
+					<p>
+						Phasellus euismod orci quis dolor semper, nec aliquet nisl dapibus. Donec viverra luctus sagittis. Nulla a neque nec erat porta mollis et non nisi. 
+					</p>
+				</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="service-box" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+					<h3>Activities</h3>
+					<p>
+						Phasellus euismod orci quis dolor semper, nec aliquet nisl dapibus. Donec viverra luctus sagittis. Nulla a neque nec erat porta mollis et non nisi. 
+					</p>
+				</div>
+				</div>
+
+			</div><!--service content-->
+			</div><!--section block-->
+		</div>
+	</div>
+	</section>
+
+	<div id="footer"></div>
+
+  <script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
+    <script>
+      window.counter = function() {
+        // this refers to the html element with the data-scroll-showCallback tag
+        var span = this.querySelector('span');
+        var current = parseInt(span.textContent);
+
+        span.textContent = current + 1;
+      };
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+          addHeight: true
+        });
+      });
+    </script>
